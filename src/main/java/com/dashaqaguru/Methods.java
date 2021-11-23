@@ -6,6 +6,7 @@ public class Methods {
         cat.jump ();
         cat.eat();
         cat.sleep();
+        cat.play();
 
         Cats cat2 = new Cats( "Vasya", (byte) 3, "grey", false);
     }

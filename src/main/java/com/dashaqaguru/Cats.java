@@ -7,6 +7,7 @@ public class Cats {
     private String color;
     private boolean isKitten;
     private static int catCount = 0;
+    private int weight;
 
     public Cats(String name, byte age, String color, boolean isKitten) {
         this.name = name;
@@ -51,6 +52,13 @@ public class Cats {
 
     public static int getCatCount(){ return catCount; }
 
+    public int getWeight() {
+        return weight;
+    }
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
     public void jump() {
         System.out.println(String.format("cat %s with age %s jumps", name, age));
     }
@@ -61,5 +69,8 @@ public class Cats {
 
     public void sleep() {
         System.out.println(String.format("%s %s cat %s with age %s sleeps", isKitten, color, name, age));
+    }
+    public void play() {
+        System.out.println(String.format("cat %s with age %s plays", name, age));
     }
 }

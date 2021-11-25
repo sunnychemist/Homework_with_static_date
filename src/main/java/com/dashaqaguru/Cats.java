@@ -17,7 +17,6 @@ public class Cats {
         catCount++;
     }
 
-
     public String getName() {
         return name;
     }
@@ -55,6 +54,7 @@ public class Cats {
     public int getWeight() {
         return weight;
     }
+
     public void setWeight(int weight) {
         this.weight = weight;
     }
@@ -70,6 +70,7 @@ public class Cats {
     public void sleep() {
         System.out.println(String.format("%s %s cat %s with age %s sleeps", isKitten, color, name, age));
     }
+
     public void play() {
         System.out.println(String.format("cat %s with age %s plays", name, age));
     }
